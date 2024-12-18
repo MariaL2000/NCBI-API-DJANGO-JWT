@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Search sequences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: auto;
+            padding: 0;
+            text-align: center; /* Centra todo el contenido del body */
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between; /* Espacio entre los elementos */
+            align-items: center; /* Centra verticalmente los elementos */
+            margin-bottom: 20px; /* Espacio debajo de la navbar */
+        }
+
+        .navbar h2 {
+            margin: 0; /* Elimina el margen del título */
+        }
+
+        .navbar a {
+            margin-left: 10px; /* Reduce el espacio entre el título y los enlaces */
+            color: white;
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+        }
+
+        .navbar a:hover {
+            text-decoration: underline; /* Subraya el texto al pasar el mouse */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto; /* Centra el contenedor */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .description {
+            margin: 15px 0;
+            color: #666;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column; /* Coloca los elementos en columna */
+            align-items: center; /* Centra los elementos */
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%; /* Hace que el input ocupe todo el ancho */
+            max-width: 400px; /* Limita el ancho máximo del input */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838; /* Cambia el color al pasar el mouse */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px 0; /* Aumenta el padding para más altura */
+            min-height: 150px; /* Establece una altura mínima para el footer */
+            background-image: url('https://wallpapercave.com/wp/wp3430218.jpg'); /* Imagen de fondo */
+            background-size: cover; /* Cubre todo el fondo */
+            background-position: center; /* Centra la imagen */
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(7, 9, 131);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Bio-Analitic Project</h2>
+        <div>
+            <a href="https://wa.me/1234567890" target="_blank">Contact</a> <!-- Reemplaza con tu número de WhatsApp -->
+            <a href="{% url 'sequences:about' %}">About me</a> <!-- Asegúrate de que about.html esté en la misma carpeta -->
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Search sequences of DNA</h1>
+        <form action="{% url 'sequences:sequence' %}" method="get">
+            <label for="query">Text the DNA:</label>
+            <input type="text" id="query" name="query" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bio-Analitic Project</p>
+    </footer>
+</body>
+</html>

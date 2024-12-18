@@ -1,0 +1,7 @@
+<!-- logout.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Cerrar Sesión</h2>
+<p>Has cerrado sesión correctamente. <a href="{% url 'auth_view' %}">Volver a la página de autenticación</a></p>
+{% endblock %}
