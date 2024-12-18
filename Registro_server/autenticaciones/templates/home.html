@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Analytic Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0; /* Elimina márgenes del body */
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #000000; /* Fondo negro */
+            color: white;
+            padding: 10px 20px; /* Espaciado interno */
+            display: flex;
+            align-items: center; /* Centra verticalmente los elementos */
+            justify-content: center; /* Centra horizontalmente los elementos */
+            position: relative; /* Para el posicionamiento de los enlaces */
+        }
+
+        .navbar h2 {
+            margin: 0; /* Elimina el margen del título */
+            color: white; /* Color del texto del título */
+            flex: 1; /* Permite que el título ocupe espacio */
+            text-align: left; /* Alinea el título a la izquierda */
+        }
+
+        .navbar a {
+            margin: 0 15px; /* Espacio entre los enlaces */
+            color: white; /* Color de los enlaces */
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el texto */
+            transition: color 0.3s; /* Transición suave para el cambio de color */
+        }
+
+        .navbar a:hover {
+            color: #ddd; /* Cambia el color al pasar el mouse */
+        }
+
+        .animated-banner {
+            animation: fadeIn 2s, slideIn 1s forwards; /* Añade animación de deslizamiento */
+            text-align: center; /* Centra el texto del banner */
+            margin: 20px 0; /* Espacio alrededor del banner */
+            font-size: 24px; /* Tamaño de fuente */
+            color: #333; /* Color del texto */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px); /* Desliza desde arriba */
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .options {
+            text-align: center; /* Centra el contenido */
+            margin: 20px 0; /* Espacio alrededor de las opciones */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: blue; /* Color azul para el botón */
+            color: white; /* Color del texto del botón */
+            text-decoration: none; /* Elimina el subrayado */
+            border-radius: 4px; /* Bordes redondeados */
+            transition: background-color 0.3s; /* Transición suave para el color de fondo */
+        }
+
+        .button:hover {
+            background-color: darkblue; /* Color al pasar el mouse */
+        }
+
+        .project-info {
+            margin: 40px auto; /* Aumenta el espacio entre el botón y el proyecto y centra el contenedor */
+            padding: 15px;
+            background-color: #e9ecef; /* Color de fondo para el div de información del proyecto */
+            border-radius: 8px;
+            text-align: left; /* Alinea el texto a la izquierda */
+            max-width: 600px; /* Limita el ancho máximo del contenedor */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+        }
+
+        .logout-container {
+            display: flex; /* Utiliza flexbox para centrar el botón */
+            justify-content: center; /* Centra horizontalmente */
+            margin-top: 20px; /* Espacio superior para separar del proyecto */
+        }
+
+        .logout-button {
+            padding: 10px 20px;
+            background-color: red; /* Color rojo para el botón de cerrar sesión */
+            color: white; /* Color del texto del botón */
+            text-decoration: none; /* Elimina el subrayado */
+            border-radius: 4px; /* Bordes redondeados */
+            transition: background-color 0.3s; /* Transición suave para el color de fondo */
+        }
+
+        .logout-button:hover {
+            background-color: darkred; /* Color al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Bio-Analytic Project</h2>
+        <a href="https://wa.me/1234567890" target="_blank">Contact</a> <!-- Reemplaza con tu número de WhatsApp -->
+        <a href="{% url 'sequences:about' %}">About me</a> <!-- Asegúrate de que about.html esté en la misma carpeta -->
+    </div>
+
+    <div class="animated-banner">
+        <h2>Hi, Welcome to Bio-Analytic Project</h2>
+    </div>
+
+    <div class="options">
+        <a href="{% url 'sequences:sequence' %}" class="button">Search Sequence</a>
+    </div>
+
+    <div class="project-info">
+        <h2>About This Project</h2>
+        <p>This project is designed to help users search for specific DNA sequences. It provides a user-friendly interface where you can input a DNA sequence and retrieve relevant information. The goal is to facilitate research and education in genetics by making DNA sequence analysis accessible to everyone.</p>
+        <p>Whether you are a student, a researcher, or just someone interested in genetics, this tool can assist you in understanding DNA sequences better. We hope you find it useful!</p>
+        <p>This project connects to the NCBI API to extract information based on the provided DNA sequence, which is validated before processing. The extracted data is then stored in a database for easy access and further analysis.</p>
+    </div>
+
+    <div class="logout-container">
+        <a href="{% url 'autenticaciones:logout' %}" class="logout-button">Cerrar sesión</a>
+    </div>
+
+</body>
+</html>

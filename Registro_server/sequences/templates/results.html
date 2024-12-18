@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados de Búsqueda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px; /* Espacio alrededor del contenido */
+            text-align: center; /* Centra el texto */
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px; /* Espacio debajo del título */
+        }
+
+        ul {
+            list-style-type: none; /* Elimina los puntos de la lista */
+            padding: 0; /* Elimina el padding de la lista */
+            margin: 20px 0; /* Espacio arriba y abajo de la lista */
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0; /* Espacio entre los elementos de la lista */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+        }
+
+        p {
+            color: #666;
+            margin: 20px 0; /* Espacio arriba y abajo del párrafo */
+        }
+
+        a {
+            text-decoration: none; /* Elimina el subrayado del enlace */
+            padding: 10px 20px;
+            background-color: #28a745; /* Color de fondo del botón */
+            color: white; /* Color del texto */
+            border-radius: 4px; /* Bordes redondeados */
+            display: inline-block; /* Hace que el enlace se comporte como un botón */
+            margin-top: 20px; /* Espacio encima del botón */
+        }
+
+        a:hover {
+            background-color: #218838; /* Color de fondo al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>Resultados de Búsqueda</h1>
+    {% if results %}
+        <ul>
+            {% for item in results %}
+                <li>ID: {{ item.id }}, Nombre: {{ item.name }}, Longitud: {{ item.length }}, Descripción: {{ item.description }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <a href="{% url 'sequences:sequence' %}">Volver a buscar</a>
+</body>
+</html>
