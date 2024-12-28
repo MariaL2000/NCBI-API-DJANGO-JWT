@@ -1,5 +1,15 @@
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+<img src="https://img.shields.io/badge/JSON_Web_Tokens-000000?style=flat-square&logo=json-web-tokens&logoColor=white" alt="JSON Web Tokens" />
+ <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white" alt="Django" />
+<img src="https://img.shields.io/badge/Django_REST_Framework-3E6F8E?style=flat-square&logo=django&logoColor=white" alt="Django REST Framework" />
+<img src="https://img.shields.io/badge/NCBI-8A9B0F?style=flat-square&logo=ncbi&logoColor=white" alt="NCBI" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+</div>
 
-This a useful project that use JWT as protect system to get autenticate users , the goal is find DNA sequences using the NCBI database API to get your most important data.
+
+This a **useful** project that use **JWT** as protect system to get autenticate users , the goal is find DNA sequences using the NCBI database API to get your most important data.
 
 **Here you will find:**
 
