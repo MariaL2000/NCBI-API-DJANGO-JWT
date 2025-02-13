@@ -36,14 +36,10 @@ Make sure you have Git installed on your machine.
 https://github.com/MariaL2000/NCBI-API-DJANGO-JWT.git
 
 
-## Example video
-<video width="600" controls>
-  <source src="Registro_server/video.webm" type="video/mp4">
-  Tu navegador no soporta videos.
-</video>
 
 
-![Auth view](Registro_server/ncbi1.png)
 
-![Results view](Registro_server/ncbi.png)
+![Auth view](https://github.com/user-attachments/assets/00aef21c-b453-43de-818f-12083376503b)
 
+
+![Results view](https://github.com/user-attachments/assets/d0a75cbd-d499-4f1c-b2f4-5d4d71b4fc0e)
