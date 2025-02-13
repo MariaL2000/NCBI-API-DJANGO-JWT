@@ -34,3 +34,14 @@ Make sure you have Git installed on your machine.
 - Use the following command to clone the repository:
 
 https://github.com/MariaL2000/NCBI-API-DJANGO-JWT.git
+
+
+## Example video
+<video width="600" controls>
+  <source src="" type="video/mp4">
+  Tu navegador no soporta videos.
+</video>
+
+
+![Texto alternativo](ruta/de/la/imagen.jpg)
+
