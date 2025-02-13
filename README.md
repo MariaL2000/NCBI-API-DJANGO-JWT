@@ -9,7 +9,7 @@
 </div>
 
 
-This a **useful** project that use **JWT** as protect system to get autenticate users , the goal is find DNA sequences using the NCBI database API to get your most important data.
+This a **useful** project that use **JWT** as protect system to get autenticate users , the goal is find DNA sequences using the NCBI database API to get your most important data. Is the start of the project, in a future we can work on a better frontend but the idea is a functional an usefull backend.
 
 **Here you will find:**
 
@@ -38,10 +38,12 @@ https://github.com/MariaL2000/NCBI-API-DJANGO-JWT.git
 
 ## Example video
 <video width="600" controls>
-  <source src="" type="video/mp4">
+  <source src="Registro_server/video.webm" type="video/mp4">
   Tu navegador no soporta videos.
 </video>
 
 
-![Texto alternativo](ruta/de/la/imagen.jpg)
+![Auth view](Registro_server/ncbi1.png)
+
+![Results view](Registro_server/ncbi.png)
 
