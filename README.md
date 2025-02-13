@@ -9,7 +9,7 @@
 </div>
 
 
-This a **useful** project that use **JWT** as protect system to get autenticate users , the goal is find DNA sequences using the NCBI database API to get your most important data. Is the start of the project, in a future we can work on a better frontend but the idea is a functional an usefull backend.
+This a **useful** project that use **Jason Web Tokens** as protect system to get autenticate users , the goal is find DNA sequences using the **NCBI** database API to get your most important data. Is the start of the project, in a future we can work on a better frontend but the idea is a functional an usefull backend.
 
 **Here you will find:**
 
@@ -43,3 +43,7 @@ https://github.com/MariaL2000/NCBI-API-DJANGO-JWT.git
 
 
 ![Results view](https://github.com/user-attachments/assets/d0a75cbd-d499-4f1c-b2f4-5d4d71b4fc0e)
+
+
+## Contact
+Please if you like to send request, contact me, thank you.
