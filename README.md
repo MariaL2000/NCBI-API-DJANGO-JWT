@@ -37,11 +37,14 @@ https://github.com/MariaL2000/NCBI-API-DJANGO-JWT.git
 
 
 
-
+## Auth view
 
 ![Auth view](https://github.com/user-attachments/assets/00aef21c-b453-43de-818f-12083376503b)
 
 
+
+
+## Results view
 ![Results view](https://github.com/user-attachments/assets/d0a75cbd-d499-4f1c-b2f4-5d4d71b4fc0e)
 
 
